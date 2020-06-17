@@ -1,0 +1,6 @@
+- name: Pull image
+  hosts: fw-docker
+  tasks:
+  - name: pull
+    docker_image:
+      name: centos
